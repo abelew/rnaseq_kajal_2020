@@ -109,7 +109,7 @@ design[["Patient"]] <- as.factor(design[["Patient"]])
 design[["Stimulation"]] <- as.factor(design[["Stimulation"]])
 design[["Batch"]] <- as.factor(design[["Batch"]])
 design[["Growth"]] <- as.factor(design[["Growth"]])
-files <- file.path("kallisto abundance files/", design$HPGL.Identifier, "abundance.tsv")
+files <- file.path("kallisto abundance files/", design$HPGL.Identifier, "abundance.tsv.xz")
 names(files) <- paste0("HPGL09", c(12:31, 42:60))
 rownames(design) <- design[[1]]
 
